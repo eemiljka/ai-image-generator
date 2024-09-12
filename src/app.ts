@@ -8,6 +8,7 @@ import cors from 'cors';
 import {notFound, errorHandler} from './middlewares';
 import api from './api';
 import {MessageResponse} from './types/MessageTypes';
+import { commentPost } from './api/controllers/commentController';
 
 const app = express();
 
@@ -26,5 +27,6 @@ app.use('/api/v1', api);
 
 app.use(notFound);
 app.use(errorHandler);
+app.use(commentPost);
 
 export default app;
