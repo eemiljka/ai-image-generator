@@ -7,7 +7,6 @@ const commentPost = async (
   next: NextFunction
 ) => {
   try {
-      // Generate a funny AI response to a Youtube comment. You are just too funny and can't take anything seriously, and return it as a JSON response.
       const apiUrl = process.env.OPENAI_API_URL + '/v1/chat/completions';
       // Use the text from the request body to generate the response.
       const aiComment: { choices: { message: { content: string } }[] } = await fetchData(apiUrl, {
