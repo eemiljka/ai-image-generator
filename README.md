@@ -1,34 +1,34 @@
 # Function with the prompt
 
-The following function shows the logic behind the AI response commenter. It first declares the API URL which it then uses to fetch data and post a comment based on the users initial comment. The prompt is shown on "content" which tells the AI to be a sarcastic and hostile imitating an 18th century aristocrat.
+The following function shows the logic behind the AI image generator.
 
-![commentPost](./images/commentPostFunction.png)
+![generateImage](./images/generateImage.png)
 
 # Testing
 
-Below is shown a Postman test with a mock Youtube comment.
+Below is shown a Postman test trying to generate an image.
 
-![comment](./images/commenter.png)
+![body](./images/test-body.png)
 
 # Response
 
 Below is shown the response from AI.
 
-![response](./images/responsefromai.png)
+![response](./images/response.png)
 
-# Second prompt
+# Actual image generated
 
-Below is shown a prompt change on the function.
+Below is shown the picture it created.
 
-![prompt](./images/prompt2.png)
+![image](./images//image.png)
 
-# Testing again
+# Function for editing the existing image
 
-Below is shown another Postman test with a mock Youtube comment.
-![comment](./images/commenter2.png)
+Below is shown the function to edit the existing image.
+![function](./images/edit-image-function.png)
 
-# Response
+# Testing to edit
 
-Below is shown the response of the AI with the new prompt.
+I didn't figure out how to get the editing to work...
 
-![response](./images/responsefromai2.png)
+![editfail](./images/editing-fail.png)

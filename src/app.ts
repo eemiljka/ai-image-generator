@@ -8,7 +8,7 @@ import cors from 'cors';
 import {notFound, errorHandler} from './middlewares';
 import api from './api';
 import {MessageResponse} from './types/MessageTypes';
-import { commentPost } from './api/controllers/commentController';
+import { editImage, generateImage } from './api/controllers/imageController';
 
 const app = express();
 
@@ -27,6 +27,7 @@ app.use('/api/v1', api);
 
 app.use(notFound);
 app.use(errorHandler);
-app.use(commentPost);
+app.use(generateImage);
+app.use(editImage);
 
 export default app;
