@@ -25,6 +25,7 @@ Below is shown a prompt change on the function.
 # Testing again
 
 Below is shown another Postman test with a mock Youtube comment.
+![comment](./images/commenter2.png)
 
 # Response
 
