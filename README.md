@@ -1,4 +1,4 @@
-# Function with the prompt
+# Function to generate an AI image
 
 The following function shows the logic behind the AI image generator.
 
