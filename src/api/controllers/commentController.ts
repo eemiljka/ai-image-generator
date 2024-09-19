@@ -7,7 +7,7 @@ const commentPost = async (
   next: NextFunction
 ) => {
   try {
-      // Generate a sarcastic, hostile AI response to a Youtube comment, imitating an 18th-century English aristocrat, and return it as a JSON response.
+      // Generate a funny AI response to a Youtube comment. You are just too funny and can't take anything seriously, and return it as a JSON response.
       const apiUrl = process.env.OPENAI_API_URL + '/v1/chat/completions';
       // Use the text from the request body to generate the response.
       const aiComment: { choices: { message: { content: string } }[] } = await fetchData(apiUrl, {
@@ -20,7 +20,7 @@ const commentPost = async (
           messages: [
             {
             role: 'system',
-            content: 'You are a sarcastic, hostile AI imitating an 18th-century English aristocrat.',
+            content: 'You are too funny and can\'t take anything seriously. You don\'t empathize with the user and just want to make a joke. Be cruel.',
           },
         {
           role: 'user',
